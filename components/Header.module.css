@@ -1,0 +1,57 @@
+.submenuContainer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .horizontalMenu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 1600px;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+  
+  .horizontalMenu li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Opcional: estilo para el hover */
+  .horizontalMenu li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Asegurarse que el dropdown tiene posición relativa */
+  .dm.lv1 {
+    position: relative;
+  }
+  
+  /* Estilo para las opciones del menú principal */
+  summary.dropdown-caret {
+    cursor: pointer;
+    padding: 10px 0;
+    user-select: none;
+  }
+  
+  
+  /* Estilo para añadir tu propio indicador de dropdown */
+  summary.dropdown-caret::after {
+    content: '▼';
+    font-size: 0.6em;
+    margin-left: 5px;
+    transition: transform 0.2s;
+  }
+  
+  /* Rotar el indicador cuando está abierto */
+  details[open] summary.dropdown-caret::after {
+    transform: rotate(180deg);
+  }
