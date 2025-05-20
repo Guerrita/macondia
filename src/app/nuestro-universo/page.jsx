@@ -5,12 +5,23 @@ import Image from 'next/image';
 
 export default function SobreNosotros() {
   return (
-    <div 
+
+
+    <div
       className="min-h-screen w-full bg-cover bg-fixed bg-center"
       style={{ backgroundImage: "url('/bg.jpg')" }}
     >
+
       {/* Contenedor principal con fondo blanco */}
       <div className="w-full max-w-6xl mx-auto px-8 py-10 bg-white  shadow-xl">
+        <Image
+          src="/mundos.jpeg"
+          alt="mundos de macondia"
+          width={400}
+          height={400}
+          className="block w-full h-auto object-contain my-8 mx-auto"
+          priority
+        />
         {/* Título y subtítulo */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-2">Everybody&apos;s Town</h1>

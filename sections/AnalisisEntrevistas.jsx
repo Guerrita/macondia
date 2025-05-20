@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function AnalisisEntrevistas() {
   return (
@@ -24,11 +25,22 @@ export default function AnalisisEntrevistas() {
           Ante la búsqueda de unos resultados más amplios, se dividieron algunas preguntas, según los tipos de persona entrevistadas: usuarios activos, nuevos, y preguntas generales.<br />
           Y estas fueron algunas de sus respuestas:
         </p>
+        <Image
+          src="/palabras.jpeg"
+          alt="nube de palabras"
+          width={400}
+          height={400}
+          className="block max-w-4xl w-94 h-auto object-contain rounded-lg mt-8 mx-auto"
+          priority
+        />
+        <motion.h2
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-2xl sm:text-3xl font-semibold mb-6 text-center tracking-wide"
+        >Análisis:</motion.h2>
         <p>
-          -Nube de palabras de cómo los usuarios perciben a Macondia.
-        </p>
-        <p>
-          <b>Análisis:</b><br />
           Por medio de las entrevistas afirmamos que la marca sí se ve afectada por la hipótesis generada. Estuvimos conversando con 3 estudiantes de comunicación social, 1 joven especializado en visual merchandising y 2 estudiantes de mercadeo, quienes demuestran tener un gran respeto hacia la marca en calidad del contenido de fotos, versatilidad en las prendas y una página web que denota un estilo luxury.
         </p>
         <p>
